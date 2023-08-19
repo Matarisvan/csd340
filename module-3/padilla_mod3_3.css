@@ -16,6 +16,8 @@ body {
     display: inline-block;
     border: 1px solid red;
     width: 45%;
+    padding: 1rem 1rem;
+    vertical-align: middle;
 }
 .lastDiv {
     float: right;
@@ -24,4 +26,5 @@ body {
 h1 {
     text-align: center;
     text-decoration: underline;
+    background-color: crimson;
 }
