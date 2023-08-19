@@ -1,18 +1,19 @@
 html {
-    font-size: 16px;
+    font-size: px;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
-container {
-    
+.column {
+    float: left;
+    width: 45%;
+    padding: auto;
+    height: auto;
 }
 h1 {
     text-align: center;
-}
-h2 {
-    
+    text-decoration: underline;
 }
 
 a {
