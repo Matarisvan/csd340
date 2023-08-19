@@ -1,1 +1,38 @@
-
+html {
+    font-size: 16px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px
+}
+h1 {
+    background-color: darkred;
+    color: aquamarine;
+}
+h2 {
+    background-color: darkred;
+    color: aquamarine;
+}
+h3 {
+    background-color: darkred;
+    color: aquamarine;
+}
+h4 {
+    background-color: darkred;
+    color: aquamarine;
+}
+a {
+    color: #000270;
+    text-decoration: none;
+}
+a:hover {
+    color: #D6A800;
+}
+a:visited {
+    color: rgb(255, 0, 0);
+}
