@@ -13,13 +13,12 @@ body {
 h1 {
     font-weight: 400;
 }
-.navbar {
+#navbar {
     overflow: hidden;
     background-color: rgba(255, 0, 100, 1);
-    border-bottom: 15px rgba(0, 255, 50, 1);
-    border-color: black;
+    border-bottom: 15px solid rgba(0, 255, 50, 1);
 }
-.navbar a {
+#navbar a {
     float: left;
     display: block;
     color: white;
@@ -27,11 +26,11 @@ h1 {
     padding: 14px 16px;
     text-decoration: none;
 }
-.navbar a:hover {
+#navbar a:hover {
     background-color: rgba(0, 0, 250, 1);
     color: rgba(255, 255, 255, 1);
 }
-.container {
+#container {
     margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
