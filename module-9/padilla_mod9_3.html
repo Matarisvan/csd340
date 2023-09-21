@@ -1,0 +1,58 @@
+<!-- Prof. Joseph Issa : Assignment 9.3 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description"
+        content="This is Assignment #9.3" />
+    <meta name="keywords"
+        content="assignment, homework, JavaScript" />
+    <meta name="robots"
+        content="nofollow" />
+    <meta http-equiv="author"
+        content="Luis Padilla" />
+    <link href="padilla_mod9_3.css" type="text/css"
+        rel="stylesheet" />
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        var firstVar = "Honduran";
+        var secondVar = "Spanish";
+        var thirdVar = "Costa Rica";
+        var fourthVar = "Milan";
+    </script>
+</head>
+
+<body>
+    <div id="container"></div>
+    <h1>Assignment 9.3 - JavaScript Part 1</h1>
+    <h2>Introduction to Luis Manuel</h2>
+    <p class="intro">My name is Luis Manuel Padilla Jr. and I was born to a Costa Rican mother and a <span id="Honduran">________</span> father.
+        The city that birthed me was Miami, Florida, but I grew up in a southern town in Georgia after my parents moved
+        there when I was about a year and a half old. A couple of years later and I was introduced to my younger brother.
+        We are a family of four.</p>
+    <p>The first language I learned was <span id="Spanish">_______</span> because that's all my parents would speak at home. They told me I could
+        learn English at school, so I did not actually learn the English language until my fourth and fifth years of life.
+        Now, I am more proficient at English, but I am fluent in both languages and would not struggle living in any
+        country that speaks both.</p>
+    <p>I like to say that I grew up "part time" in <span id="Costa Rica">__________</span> since growing up I would spend every summer vacation there.
+        As soon as the school year ended, we would head to Costa Rica and spend two to three months there at a time.
+        I believe this drastically helped in my development and learning of the Spanish language as I would have no choice
+        but to speak the local language when there.</p>
+    <p>I have traveled to various countries throughout my life, but there are still many more that I would like to
+        visit one day. <span class="sentence"> My favorite soccer team is AC Milan, and they are located in <span id="Milan">_____</span>, Italy.</span>
+        I have not been there yet, but it is on my bucket list to travel there and watch them play live.</p>
+    <p>
+        <button type="button" onclick="document.getElementById('Honduran').innerHTML = firstVar">Honduran</button> <br>
+        <button type="button" onclick="document.getElementById('Spanish').innerHTML = secondVar">Spanish</button> <br>
+        <button type="button" onclick="document.getElementById('Costa Rica').innerHTML = thirdVar">Costa Rica</button> <br>
+        <button type="button" onclick="document.getElementById('Milan').innerHTML = fourthVar">Milan</button> <br>
+    </p>
+    <hr/>
+    <address>
+        <p><a href="https://www.bellevue.edu/">Bellevue University</a></p>
+        <p>1000 Galvin Rd S</p>
+        <p>Bellevue, Nebraska 68005</p>
+    </address>
+</body>
+
+</html>
