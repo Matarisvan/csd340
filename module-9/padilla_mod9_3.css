@@ -21,17 +21,17 @@ p {
 address {
     text-align: center;
 }
-a {
+address a {
     font-weight: bold;
     font-size: 1.25em;
-    color: #4f3674;
+    color: #000000;
     text-decoration: none;
 }
-a:hover {
+address a:hover {
     background-color: #D6A800;
     text-decoration: underline;
 }
-a:visited {
+address a:visited {
     background-color: rgb(255, 0, 0);
 }
 span.sentence {
@@ -46,16 +46,16 @@ p.intro {
     bottom: 0;
     width: 100%;
 }
-.footer > p {
+.footer p {
     font-weight: 400;
     padding-right: 10px;
     font-style: italic;
 }
-.footer > a {
+.footer a {
     text-decoration: none;
     float: right;
 }
-.footer > a:hover {
+.footer a:hover {
     text-decoration: underline;
     background-color: rgb(0, 247, 255);
 }
