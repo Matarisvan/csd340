@@ -10,3 +10,11 @@ h1 {
     text-transform: uppercase;
     text-align: center;
 }
+#image {
+    display: none;
+}
+p:hover{
+    color: rgba(255, 0, 75, 1);
+    font-style: italic;
+    font-weight: bold;
+}

@@ -14,22 +14,42 @@
     <link href="Padilla_Mod10.3.css" type="text/css"
         rel="stylesheet">
     
-        <script>
-            var firstImg;
-            var secondImg;
-            var thirdImg;
-            var fourthImg;
-        </script>
+    <script>
+        function show() {
+            document.getElementById('image').style.display = "block";
+            document.getElementById('ibra').style.display = "none"
+        }
+    </script>
 
 </head>
 
 <body>    
     <h1>Assignment 10.3: JavaScript - Part 2</h1>
     <br>
-    <div id="container">
-        
-
+    <div>
+        <p>Hover over stadium image to change time of day</p>
+        <a href="#"
+            onmouseover="stadium.src='images/sanSiroNight.jpg';"
+            onmouseout="stadium.src='images/sanSiroDay.jpg';">
+            <img name="stadium" src="images/sanSiroDay.jpg" height="480" width="768">
+        </a>
     </div>
+    <br>
+    <div>
+        <a href="#"
+            onmouseover="celebracion.src='images/celebrationTwo.jpg';"
+            onmouseout="celebracion.src='images/celebrationOne.jpg';">
+            <img name="celebracion" src="images/celebrationOne.jpg" height="480" width="768">
+        </a>
+    </div>
+    <br>
+    <div>
+        <img id="image" src="images/celebrationTwo.jpg" height="480" width="768">
+       
+    </div>
+        
+ <img id="ibra" src="images/ibraTrophy.jpg" height="480" width="768" onclick="show()">
+    
 </body>
 
 </html>
