@@ -15,7 +15,18 @@
         rel="stylesheet">
 
     <script>
+        const userArray = [];
         
+        function add() {
+            var x = document.getElementById("cajaTexto").value;
+            userArray.push(x);
+        }
+        function del() {
+            userArray.pop();
+        }
+        function disp() {
+            document.getElementById("arraya").innerHTML = userArray;
+        }
     </script>
     
 
@@ -24,9 +35,22 @@
 <body>
     <h1>Assignment 11.2: JavaScript - Part 3</h1>
     <br>
-
-    <div>
-
+    <h3>You have a list to play with! Add and delete items as you please!</h3>
+    <div id="texto">
+        <input type="text" id="cajaTexto" value="">
+        <p id="textOne"></p>
+    </div>
+    <div id="sumar">
+        <button onclick="add()">Add Your Selection</button>
+    </div>
+    <div id="borrar">
+        <button onclick="del()">Delete An Entry</button>
+    </div>
+    <div id="disponer">
+        <button onclick="disp()">Display the List</button>
+    </div>
+    <div id="lista">
+        <p id="arraya"></p>
     </div>
 
 
@@ -35,3 +59,10 @@
 </body>
 
 </html>
+
+<!-- 
+    
+    // checkbox code
+    <input type="checkbox" id="myCheck"> 
+
+-->
