@@ -16,8 +16,12 @@
     
     <script>
         function show() {
-            document.getElementById('image').style.display = "block";
+            document.getElementById('trofeo').style.display = "block";
             document.getElementById('ibra').style.display = "none"
+        }
+        function showTwo() {
+            document.getElementById('trofeo').style.display ="none";
+            document.getElementById('ibra').style.display = "block";
         }
     </script>
 
@@ -36,6 +40,7 @@
     </div>
     <br>
     <div>
+        <p>Hover over celebration to see different angles</p>
         <a href="#"
             onmouseover="celebracion.src='images/celebrationTwo.jpg';"
             onmouseout="celebracion.src='images/celebrationOne.jpg';">
@@ -44,11 +49,12 @@
     </div>
     <br>
     <div>
-        <img id="image" src="images/celebrationTwo.jpg" height="480" width="768">
-       
+        <p>Click on picture to see different trophy celebrations</p>        
+        <img id="ibra" src="images/ibraTrophy.jpg" height="480" width="768" onclick="show()">
+        <img id="trofeo" src="images/trophyTwo.jpg" height="480" width="768" onclick="showTwo()">
     </div>
         
- <img id="ibra" src="images/ibraTrophy.jpg" height="480" width="768" onclick="show()">
+ 
     
 </body>
 
