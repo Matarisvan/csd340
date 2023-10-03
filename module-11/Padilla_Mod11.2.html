@@ -20,6 +20,7 @@
         function add() {
             var x = document.getElementById("cajaTexto").value;
             userArray.push(x);
+            document.getElementById("cajaTexto").value = "";
         }
         function del() {
             userArray.pop();
