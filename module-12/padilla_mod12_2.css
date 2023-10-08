@@ -55,3 +55,7 @@ a {
 a:hover {
     text-decoration:underline ;
 }
+.botones {
+    display: grid;
+    grid-template-columns: auto auto;
+}

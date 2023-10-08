@@ -6,9 +6,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Building a Website" />
+    <meta name="author" content="Luis Padilla" />
+    <meta name="robots" content="noindex,nofollow" />
     <title>CSD 340 Web Development with HTML and CSS</title>
     <link href="padilla_mod12_2.css" type="text/CSS"
         rel="stylesheet">
+
+    <script>
+        const libros = ['One Piece Manga',
+                        'Naruto Manga',
+                        'Zelda Twilight Princess Manga',
+                        'Captain Underpants',
+                        'Hank the Cowdog',
+                        'HTML & CSS: Design and Build Websites',
+                        '100 Things Every Designer Needs to Know About People',
+                        'Atomic Design',
+                        'Harry Potter',
+                        'Goosebumps'];
+        document.getElementById("leesta").innerHTML = libros;
+
+        function topToBottom() {
+
+        }
+        function bottomToTop() {
+
+        }
+
+    </script>
 </head>
 
 <body>
@@ -16,19 +42,13 @@
         <h1>Assignment 12.2: JavaScript - Part 4</h1>
         <div class="row">
             <div class="izquierda">
-                    <h3>Top 10 Favorite Books</h3>
-                        <ol>
-                            <li>One Piece Manga</li>
-                            <li>Naruto Manga</li>
-                            <li>Zelda Twilight Princess Manga</li>
-                            <li>Captain Underpants</li>
-                            <li>Hank the Cowdog</li>
-                            <li>HTML & CSS: Design and Build Websites</li>
-                            <li>100 Things Every Designer Needs to Know About People</li>
-                            <li>Atomic Design</li>
-                            <li>Harry Potter</li>
-                            <li>Goosebumps</li>
-                        </ol>
+                <h3>Top 10 Favorite Books</h3>
+                <div class="botones">
+                    <button onclick="topToBottom()">Top to Bottom</button>
+                    <button onclick="bottomToTop()">Bottom to Top</button>
+                </div>
+                <hr>    
+                <p id="leesta"></p>
             </div>
 
             <div class="derecha">
