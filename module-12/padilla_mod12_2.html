@@ -15,14 +15,29 @@
         rel="stylesheet">
 
     <script>
-
+        const libros = ['One Piece Manga',
+                            'Naruto Manga',
+                            'Zelda Twilight Princess Manga',
+                            'Captain Underpants',
+                            'Hank the Cowdog',
+                            'HTML & CSS: Design and Build Websites',
+                            '100 Things Every Designer Needs to Know About People',
+                            'Atomic Design',
+                            'Harry Potter',
+                            'Goosebumps'];
         function topToBottom() {
-            document.getElementById("leesta").innerHTML = libros.join("<br>");
-            document.getElementById("leesta").innerHTML = libros.sort();
+            var leesta = document.getElementById("leesta");
+            leesta.innerHTML = "<ol>";
+            for (let i = 0; i < libros.length; i++) {
+                leesta.innerHTML += '<li>' + (i +1) + ". " + libros[i] + '</li>';
+            }
         }
         function bottomToTop() {
-            document.getElementById("leesta").innerHTML = libros.sort();
-            document.getElementById("leesta").innerHTML = libros.reverse();
+            var leesta = document.getElementById("leesta");
+            leesta.innerHTML = "<ol reversed>";
+            for (let i = 9; i >= 0; i--) {
+                leesta.innerHTML += '<li>' + (i +1) + ". " + libros[i] + '</li>';
+            }
         }
 
     </script>
@@ -40,24 +55,7 @@
                 </div>
                 <hr>    
                 
-                <p id="leesta">
-                    <script>
-                        const libros = ['One Piece Manga',
-                            'Naruto Manga',
-                            'Zelda Twilight Princess Manga',
-                            'Captain Underpants',
-                            'Hank the Cowdog',
-                            'HTML & CSS: Design and Build Websites',
-                            '100 Things Every Designer Needs to Know About People',
-                            'Atomic Design',
-                            'Harry Potter',
-                            'Goosebumps'];
-                            document.write("<ol>");
-                            for (var i = 0; i < libros.length; i++)
-                                document.write("<li>" + libros[i] + "</li>")
-                        document.write("</ol>");
-                    </script>
-                </p>
+                <p id="leesta"></p>
                     
                 
             </div>
