@@ -20,13 +20,16 @@
         function add() {
             var x = document.getElementById("cajaTexto").value;
             userArray.push(x);
+            alert("You added '" + x + "' to the list!")
             document.getElementById("cajaTexto").value = "";
         }
         function del() {
             userArray.pop();
         }
         function disp() {
-            document.getElementById("arraya").innerHTML = userArray;
+            
+                document.getElementById("arraya").innerHTML = userArray.join('<br>');
+            
         }
     </script>
     
