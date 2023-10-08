@@ -1,0 +1,57 @@
+html {
+    font-size: 16px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+}
+h3 {
+    font-weight: 500;
+    border-radius: 15px;
+    border: 1px red;
+}
+ol {
+    font-weight: 300;
+}
+ul {
+    font-weight: 300;
+    list-style-type: upper-roman;
+    
+}
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.izquierda {
+    width: 45%;
+    border-radius: 15px;
+    border: 1px solid red;
+    padding: 10px;
+    float: left;
+}
+.derecha {
+    width: 45%;
+    border-radius: 15px;
+    border: 1px dashed red;
+    padding: 10px;
+    float: right;
+}
+.lastDiv {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration:underline ;
+}
