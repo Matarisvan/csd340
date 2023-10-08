@@ -27,8 +27,11 @@
             userArray.pop();
         }
         function disp() {
-            
-                document.getElementById("arraya").innerHTML = userArray.join('<br>');
+            var arraya = document.getElementById("arraya");
+            arraya.innerHTML = "<ol>";
+            for (let i = 0; i < userArray.length; i++) {
+                arraya.innerHTML += '<li>' + (i +1) + ". " + userArray[i] + '</li>';
+            }
             
         }
     </script>
