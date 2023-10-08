@@ -15,23 +15,14 @@
         rel="stylesheet">
 
     <script>
-        const libros = ['One Piece Manga',
-                        'Naruto Manga',
-                        'Zelda Twilight Princess Manga',
-                        'Captain Underpants',
-                        'Hank the Cowdog',
-                        'HTML & CSS: Design and Build Websites',
-                        '100 Things Every Designer Needs to Know About People',
-                        'Atomic Design',
-                        'Harry Potter',
-                        'Goosebumps'];
-        document.getElementById("leesta").innerHTML = libros;
 
         function topToBottom() {
-
+            document.getElementById("leesta").innerHTML = libros.join("<br>");
+            document.getElementById("leesta").innerHTML = libros.sort();
         }
         function bottomToTop() {
-
+            document.getElementById("leesta").innerHTML = libros.sort();
+            document.getElementById("leesta").innerHTML = libros.reverse();
         }
 
     </script>
@@ -48,7 +39,27 @@
                     <button onclick="bottomToTop()">Bottom to Top</button>
                 </div>
                 <hr>    
-                <p id="leesta"></p>
+                
+                <p id="leesta">
+                    <script>
+                        const libros = ['One Piece Manga',
+                            'Naruto Manga',
+                            'Zelda Twilight Princess Manga',
+                            'Captain Underpants',
+                            'Hank the Cowdog',
+                            'HTML & CSS: Design and Build Websites',
+                            '100 Things Every Designer Needs to Know About People',
+                            'Atomic Design',
+                            'Harry Potter',
+                            'Goosebumps'];
+                            document.write("<ol>");
+                            for (var i = 0; i < libros.length; i++)
+                                document.write("<li>" + libros[i] + "</li>")
+                        document.write("</ol>");
+                    </script>
+                </p>
+                    
+                
             </div>
 
             <div class="derecha">
