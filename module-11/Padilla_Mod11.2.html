@@ -36,22 +36,28 @@
 <body>
     <h1>Assignment 11.2: JavaScript - Part 3</h1>
     <br>
-    <h3>You have a list to play with! Add and delete items as you please!</h3>
+    <h3>You have a text list to play with! Add and delete items as you please!</h3>
     <div id="botones">   
         <div id="texto">
             <input type="text" id="cajaTexto" value="">
         </div>
         <div id="sumar">
-            <button onclick="add()">Add Your Selection</button>
+            <button>
+                <img src="images/additionPic.jpeg" height="240" width="240" onclick="add()">
+                <figcaption>Add an Entry an entry</figcaption>
+            </button>
         </div>
         <div id="borrar">
-            <button onclick="del()">Delete An Entry</button>
+            <button>
+                <img src="images/delPic.gif" height="240" width="240" onclick="del()">
+                <figcaption>Delete an Entry</figcaption>
+            </button>
         </div>
         <div id="disponer">
-            <figure>
-                <img src="images/fPunch.gif" height="240" width="240" onclick="disp()">
+            <button>
+                <img src="images/listPic.jpeg" height="240" width="240" onclick="disp()">
                 <figcaption>Display the List</figcaption>
-            </figure>    
+            </button>    
                 
         </div>
     </div>     
